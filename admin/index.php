@@ -84,7 +84,7 @@
                 <div class="progress my-3" style="height:3px;">
                    <div class="progress-bar" style="width:55%"></div>
                 </div>
-              <p class="mb-0 text-white small-font">Gaz total consommé sur la commune en 2020 (MwH) </p>
+              <p class="mb-0 text-white small-font">Gaz total consommé en 2020 (MwH) </p>
             </div>
          </div>
        </div>
@@ -107,7 +107,7 @@
                 <div class="progress my-3" style="height:3px;">
                    <div class="progress-bar" style="width:55%"></div>
                 </div>
-              <p class="mb-0 text-white small-font">Coût total gaz </p>
+              <p class="mb-0 text-white small-font">Coût total gaz consommé en 2020 (Euros)</p>
             </div>
          </div>
        </div>
@@ -132,7 +132,7 @@
                 <div class="progress my-3" style="height:3px;">
                    <div class="progress-bar" style="width:55%"></div>
                 </div>
-              <p class="mb-0 text-white small-font">Consommation totale eau en m3</p>
+              <p class="mb-0 text-white small-font">Consommation totale eau en 2020 (m3)</p>
             </div>
          </div>
        </div>
@@ -157,7 +157,7 @@
                 <div class="progress my-3" style="height:3px;">
                    <div class="progress-bar" style="width:55%"></div>
                 </div>
-              <p class="mb-0 text-white small-font">coût total eau </p>
+              <p class="mb-0 text-white small-font">coût total eau consommée en 2020 (Euros) </p>
             </div>
          </div>
        </div>
@@ -181,7 +181,7 @@
                 <div class="progress my-3" style="height:3px;">
                    <div class="progress-bar" style="width:55%"></div>
                 </div>
-              <p class="mb-0 text-white small-font">Consommation electriques totales (Kwh)</p>
+              <p class="mb-0 text-white small-font">Electricité conosmmée en 2020 (Kwh)</p>
             </div>
          </div> 
        </div>
@@ -204,7 +204,7 @@
                 <div class="progress my-3" style="height:3px;">
                    <div class="progress-bar" style="width:55%"></div>
                 </div>
-              <p class="mb-0 text-white small-font">Coût total electrique</p>
+              <p class="mb-0 text-white small-font">Coût total electricté consommée en 2020 (Euros)</p>
             </div>
          </div> 
        </div>
@@ -229,7 +229,7 @@
                 <div class="progress my-3" style="height:3px;">
                    <div class="progress-bar" style="width:55%"></div>
                 </div>
-              <p class="mb-0 text-white small-font">Consommation totale Fuel</p>
+              <p class="mb-0 text-white small-font">Fuel consommé en 2020 (Litres)</p>
             </div>
          </div>
        </div>
@@ -254,7 +254,7 @@
                 <div class="progress my-3" style="height:3px;">
                    <div class="progress-bar" style="width:55%"></div>
                 </div>
-              <p class="mb-0 text-white small-font">Coût total fuel</p>
+              <p class="mb-0 text-white small-font">Coût total fuel consommé en 2020 (Euros)</p>
             </div>
          </div>
        </div>
@@ -294,7 +294,7 @@
             </select>
         </div>
         <div class="col-md-3 form-group">
-          <label for="">nombre d'opérations = partir du mois en cours</label>
+          <label for="">nombre de mois</label>
           <input type="number" name="last-month" class="form-control" required="required">
         </div>
         <div class="col-md-3">
@@ -510,7 +510,7 @@
      <div class="row">
         <div class="col-lg-12">
           <div class="card">
-            <div class="card-header"><i class="fa fa-table"></i> All Building List</div>
+            <div class="card-header"><i class="fa fa-table"></i> Bâtiment séléctionné</div>
             <div class="card-body">
               <div class="container">
                 <h1>Coûts en Euro</h1>
@@ -619,7 +619,7 @@
                 {
                   label: 'Fuel',
                     data: [<?php echo $fuelCost; ?>],
-                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 }]
@@ -650,7 +650,7 @@
                 {
                   label: 'Water',
                     data: [<?php echo $waterCons; ?>],
-                    backgroundColor: 'rgba(173, 131, 5, 1)',
+                    backgroundColor: 'rgba(0, 132, 255, 1)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 },
@@ -658,14 +658,14 @@
                 {
                   label: 'Electricity',
                     data: [<?php echo $elecCons; ?>],
-                    backgroundColor: 'rgba(52, 114, 239, 1)',
+                    backgroundColor: 'rgba((251, 59, 85, 1)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 },
                 {
                   label: 'Fuel',
                     data: [<?php echo $fuelCons; ?>],
-                    backgroundColor: 'rgba(142, 150, 205, 0.8)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 }]
@@ -697,7 +697,7 @@ var ctx3 = document.getElementById("charttt").getContext('2d');
                 {
                   label: 'Water',
                     data: [<?php echo $aWaterCost; ?>],
-                    backgroundColor: 'rgba(173, 131, 5, 1)',
+                    backgroundColor: 'rgba(0, 132, 255, 1)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 },
@@ -705,14 +705,14 @@ var ctx3 = document.getElementById("charttt").getContext('2d');
                 {
                   label: 'Electricity',
                     data: [<?php echo $aElecCost; ?>],
-                    backgroundColor: 'rgba(52, 114, 239, 1)',
+                    backgroundColor: 'rgba(251, 59, 85, 1)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 },
                 {
                   label: 'Fuel',
                     data: [<?php echo $aFuelCost; ?>],
-                    backgroundColor: 'rgba(142, 150, 205, 0.8)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 }]
@@ -743,7 +743,7 @@ var ctx3 = document.getElementById("charttt").getContext('2d');
                 {
                   label: 'Water',
                     data: [<?php echo $aWaterCons; ?>],
-                    backgroundColor: 'rgba(173, 131, 5, 1)',
+                    backgroundColor: 'rgba(0, 132, 255, 1)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 },
@@ -751,14 +751,14 @@ var ctx3 = document.getElementById("charttt").getContext('2d');
                 {
                   label: 'Electricity',
                     data: [<?php echo $aElecCons; ?>],
-                    backgroundColor: 'rgba(52, 114, 239, 1)',
+                    backgroundColor: 'rgba(251, 59, 85, 1)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 },
                 {
                   label: 'Fuel',
                     data: [<?php echo $aFuelCons; ?>],
-                    backgroundColor: 'rgba(142, 150, 205, 0.8)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 }]

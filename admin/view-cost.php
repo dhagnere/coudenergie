@@ -60,14 +60,14 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>All Buildings</title>
+  <title>Vue du bâtiment</title>
   <!--favicon-->
   <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
   <!-- simplebar CSS-->
@@ -121,7 +121,7 @@
       <!-- Breadcrumb-->
      <div class="row pt-2 pb-2">
         <div class="col-sm-12">
-		    <h4 class="page-title">All Buildings</h4>
+		    <h4 class="page-title">Vue individuelle du Bâtiment</h4>
 		    <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="javaScript:void();">Dashboard</a></li>
             <li class="breadcrumb-item"><a href="javaScript:void();">Buildings</a></li>
@@ -135,11 +135,11 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="card">
-            <div class="card-header"><i class="fa fa-table"></i> All Building List</div>
+            <div class="card-header"><i class="fa fa-table"></i> Vue individuelle du bâtiment</div>
             <div class="card-body">
               <div class="container"> 
-      <h1><?php if(isset($vBuildingName)){echo "Cost: " .$vBuildingName; }?></h1>       
-      <canvas id="chart" style="width: 100%; height: 65vh; ; border: 1px solid #555652;"></canvas>
+      <h1><?php if(isset($vBuildingName)){echo "Coûts: " .$vBuildingName; }?></h1>       
+      <canvas id="chart" style="width: 100%; height:65vh; ; border: 1px solid #555652;"></canvas>
 
       <script>
         var ctx = document.getElementById("chart").getContext('2d');
@@ -159,7 +159,7 @@
                 {
                   label: 'Water',
                     data: [<?php echo $waterCost; ?>],
-                    backgroundColor: 'rgba(173, 131, 5, 1)',
+                    backgroundColor: 'rgba(0, 132, 255, 1)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 },
@@ -167,14 +167,14 @@
                 {
                   label: 'Electricity',
                     data: [<?php echo $elecCost; ?>],
-                    backgroundColor: 'rgba(52, 114, 239, 1)',
+                    backgroundColor: 'rgba(251, 59, 85, 1)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 },
                 {
                   label: 'Fuel',
                     data: [<?php echo $fuelCost; ?>],
-                    backgroundColor: 'rgba(142, 150, 205, 0.8)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     borderColor:'rgba(255,255,255)',
                     borderWidth: 3  
                 }]
@@ -183,7 +183,7 @@
             options: {
                 scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
                 tooltips:{mode: 'index'},
-                legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,0,0)', fontSize: 16}}
+                legend:{display: true, position: 'top', labels: {fontColor: 'rgb(0,0,0)', fontSize: 16}}
             }
         });
       </script>

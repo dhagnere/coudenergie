@@ -64,11 +64,11 @@
      <div class="row pt-2 pb-2">
         <div class="col-sm-12">
 		    <h4 class="page-title">Liste de tous les bâtiments.</h4>
-		    <!-- <ol class="breadcrumb"> -->
-            <!-- <li class="breadcrumb-item"><a href="javaScript:void();">Accueil</a></li> -->
-            <!-- <li class="breadcrumb-item"><a href="javaScript:void();">Bâtiments</a></li> -->
-            <!-- <li class="breadcrumb-item active" aria-current="page">Liste des bâtiments</li> -->
-         <!-- </ol> -->
+		    <ol class="breadcrumb"> -->
+            <li class="breadcrumb-item"><a href="javaScript:void();">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="javaScript:void();">Bâtiments</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Liste des bâtiments</li>
+         </ol>
 	   </div>
 	   
      </div>
@@ -77,7 +77,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="card">
-            <div class="card-header"><i class="fa fa-table"></i>Liste filtrable de tous les bâtiments</div>
+            <div class="card-header"><i class="fa fa-table"></i> Liste filtrable de tous les bâtiments</div>
             <div class="card-body">
               <div class="table-responsive">
               	<?php
@@ -216,8 +216,30 @@
 
 
        var table = $('#example').DataTable( {
+         
+
         lengthChange: false,
-        buttons: [ 'copy', 'excel', 'pdf', 'print', 'colvis' ]
+        buttons: [ 'copy', 'excel', 'pdf', 'print', 'colvis' ],
+        "language": {
+        "sProcessing": "Traitement en cours ...",
+        "sLengthMenu": "Afficher _MENU_ lignes",
+        "sZeroRecords": "Aucun résultat trouvé",
+        "sEmptyTable": "Aucune donnée disponible",
+        "sInfo": "Lignes _START_ à _END_ sur _TOTAL_",
+        "sInfoEmpty": "Aucune ligne affichée",
+        "sInfoFiltered": "(Filtrer un maximum de_MAX_)",
+        "sInfoPostFix": "",
+        "sSearch": "Chercher:",
+        "sUrl": "",
+        "sInfoThousands": ",",
+        "sLoadingRecords": "Chargement...",
+        "oPaginate": {
+          "sFirst": "Premier", "sLast": "Dernier", "sNext": "Suivant", "sPrevious": "Précédent"
+        },
+        "oAria": {
+          "sSortAscending": ": Trier par ordre croissant", "sSortDescending": ": Trier par ordre décroissant"
+        }
+      }
       } );
  
      table.buttons().container()
